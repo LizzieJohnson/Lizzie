@@ -1,0 +1,43 @@
+body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background: #fdf6ef;
+      max-width: 400px;
+      margin: auto;
+      text-align: center;
+    }
+    h1 {
+      color: #7c4a23;
+    }
+    label {
+      cursor: pointer;
+      font-size: 24px;
+      margin: 10px;
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid #7c4a23;
+      border-radius: 8px;
+      user-select: none;
+      transition: background-color 0.3s ease;
+    }
+    label:hover {
+      background-color: #7c4a23;
+      color: white;
+    }
+    input[type="radio"] {
+      display: none;
+    }
+    .result {
+      display: none;
+      margin-top: 30px;
+      font-size: 18px;
+      font-style: italic;
+      color: #4e372e;
+      border-top: 1px solid #7c4a23;
+      padding-top: 20px;
+    }
+    input#sun:checked ~ .results #res-sun,
+    input#moon:checked ~ .results #res-moon,
+    input#star:checked ~ .results #res-star {
+      display: block;
+    }
